@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="sidebar">
+
+            <h1>Hi there</h1>
+            <h1>👋🏼</h1>
+            <h2>I'm <span>Ben</span><span>ja</span><span>min</span></h2>
+        <p>Web Developer</p>
+        <p>Programmer</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        <div class="socials">
+            <a href="#"><img src="img/github.svg" alt="github"></a>
+            <a href="#"><img src="img/linkedin.svg" alt="instagram"></a>
+            <a href="#"><img src="img/twitter.svg" alt="facebook"></a>
+        </div>
+    </section>
+    <section class="home">
+        <div id="home">
+            <h1>Welcome</h1>
+            <h2>to my portfolio</h2>
+            <p>Here you can find all my projects and skills</p>
+        </div>
+    </section>
+    <section class="about">
+        <div id="about">
+            <h1>About Me</h1>
+            <p>My name is Benjamin and I am a web developer. I am 20 years old and I live in Germany. I am currently studying computer science at the University of Applied Sciences in Kaiserslautern. I have been programming for about 3 years now and I am very interested in it. I am currently working on my own projects and I am also working on projects for my studies. I am very interested in web development and I am always looking for new challenges.</p>
+        </div>
+    </section>
+    <section class="skills">
+        <div id="skills">
+            <h1>Skills</h1>
+            <div class="skill">
+                <h2>HTML</h2>
+                <div class="progressBar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h2>CSS</h2>
+                <div class="progressBar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h2>JavaScript</h2>
+                <div class="progressBar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h2>PHP</h2>
+                <div class="progressBar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h2>SQL</h2>
+                <div class="progressBar">
+                    <div class="progress" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div id="projects">
+            <h1>Projects</h1>
+            <div class="projectCard">
+                <div class="projectImg">
+                    <img src="img/placeholder.png" alt="project">
+                </div>
+                <div class="projectInfo">
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <div class="projectImg">
+                    <img src="img/placeholder.png" alt="project">
+                </div>
+                <div class="projectInfo">
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <div class="projectImg">
+                    <img src="img/placeholder.png" alt="project">
+                </div>
+                <div class="projectInfo">
+                    <h2>Project 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+            <div class="projectCard">
+                <div class="projectImg">
+                    <img src="img/placeholder.png" alt="project">
+                </div>
+                <div class="projectInfo">
+                    <h2>Project 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div id="contact">
+            <h1>Contact Me</h1>
+            <p>Do you have any questions or suggestions? Then feel free to contact me.</p>
+            <br>
+            <form action="contact.php" method="post">
+                <div>
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" name="User Name" id="name" placeholder="Enter your Name here.." required>
+                </div>
+                <div>
+                    <label for="mail">Your Mail:</label><br>
+                    <input type="email" id="mail" name="email" placeholder="Enter your Email Adress here.." required>
+                </div>
+                <label for="message">Your Message:</label><br>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <br>
+                <button type="submit" name="submit">Send</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
