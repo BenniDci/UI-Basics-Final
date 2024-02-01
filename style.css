@@ -92,6 +92,10 @@ nav a{
 }
 .home{
     background-color: sandybrown;
+    background-image: url(./img/abstrakt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,14 +108,20 @@ nav a{
 }
 .home h1{
     font-size: 3em;
+    color: yellow;
+    text-shadow: red 1px 1px;
 }
 .home h2{
     font-size: 2em;
+    color: yellow;
+    text-shadow: red 1px 1px;
 }
 
 .home p{
     margin-top: 1em;
     font-size: 1.5em;
+    color: yellow;
+    text-shadow: red 1px 1px;
 }
 #scrolltop{
     position: fixed;
@@ -128,27 +138,43 @@ nav a{
 }
 .about{
     background-color: sandybrown;
+    background-image: url(./img/dragon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2em;
+    padding: 10em;
     width: auto;
     height: 100vh;
     border: 1px solid black;
     gap: 1em;
+
 }
 .about h1{
     font-size: 2.25em;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 1em
 }
 .about p{
     border: 1px solid black;
     padding: 1em;
     border-radius: 5px;
+    font-size: large;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
 }
 .skills{
     background-color: sandybrown;
+    background-image: url(./img/jump.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,6 +184,8 @@ nav a{
     height: 100vh;
     border: 1px solid black;
     gap: 1em;
+    color: rgb(214, 167, 38);
+    text-shadow: black 1px 1px; 
 }
 .skills h1{
     font-size: 2.25em;
@@ -174,6 +202,13 @@ nav a{
 }
 .projects{
     background-color: sandybrown;
+    background-image: url(./img/sonnuntergang.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding-left: 5em;
+    padding-right: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,8 +223,30 @@ nav a{
     font-size: 2.25em;
     text-align: center;
 }
+.projectCard{
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/zahlen.jpg);
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: rgba(128, 128, 128);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: rgba(128, 128, 128);
+    border: 2px solid black;
+    border-radius: 5px;
+}
 .contact{
     background-color: sandybrown;
+    background-image: url(./img/sonnuntergang2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,6 +260,45 @@ nav a{
 .contact h1{
     font-size: 2.25em;
     text-align: center;
+    color: yellow;
+    background-color: rgba(128, 128, 128);
+    background-image: url(./img/zahlen.jpg);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    background-color: rgba(128, 128, 128);
+    background-image: url(./img/zahlen.jpg);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1em;
+}
+.contact form input{
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.contact form textarea{
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.contact form button{
+    width: 80%;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    font-size: 1.2em;
 }
 footer{
     display: flex;
