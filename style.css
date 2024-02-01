@@ -13,13 +13,50 @@ main{
     border: 5px solid blue;
     background-color: rgba(128, 128, 128, 0.548);
 }
+@media screen and (min-width: 768px){
+    main{
+        grid-area: auto;
+        grid-template-areas: "sidebar home"
+                            "sidebar about"
+                            "sidebar skills"
+                            "sidebar projects"
+                            "sidebar contact"
+                            "sidebar footer";
+
+    }
+    .home{
+        grid-area: home;
+    }
+    .sidebar{
+        grid-area: sidebar;
+        position: sticky;
+        top: 0;
+    }
+}
 .sidebar{
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
     border: 1px solid black;
     gap: 1em;
+}
+.sidebar img{
+    width: auto;
+    height: 10em;
+    border-radius: 150px;
+    border: 2px solid gray;
+}
+.sidebar p{
+    color: whitesmoke;
+    font-size: 1.2em;
+    padding: 0.25em;
 }
 nav ul{
     display: flex;
@@ -34,6 +71,14 @@ nav ul{
 nav li{
     list-style: none; 
 }
+nav a{
+    text-decoration: none;
+    padding: 0.2em;
+    border: 1px solid black;
+    background-color: rgba(240, 248, 255, 0.171);
+    color: yellow;
+    
+}
 .socials{
     margin-top: 5px;
     display: flex;
@@ -41,14 +86,19 @@ nav li{
     align-items: center;
     gap: 1em;
 }
+.socials i{
+    color: limegreen;
+    font-size: 1.5em;
+}
 .home{
+    background-color: sandybrown;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: auto;
-    height: 50vh;
+    height: 100vh;
     border: 1px solid black;
     gap: 1em;
 }
@@ -59,48 +109,108 @@ nav li{
     font-size: 2em;
 }
 
-.homePage p{
+.home p{
     margin-top: 1em;
     font-size: 1.5em;
 }
+#scrolltop{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
 .about{
+    background-color: sandybrown;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2em;
     width: auto;
-    height: 50vh;
+    height: 100vh;
     border: 1px solid black;
     gap: 1em;
+}
+.about h1{
+    font-size: 2.25em;
+    text-align: center;
+}
+.about p{
+    border: 1px solid black;
+    padding: 1em;
+    border-radius: 5px;
 }
 .skills{
+    background-color: sandybrown;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: auto;
-    height: 50vh;
+    height: 100vh;
     border: 1px solid black;
     gap: 1em;
+}
+.skills h1{
+    font-size: 2.25em;
+    text-align: center;
+}
+.progressBar{
+    border: 1px solid black;
+    height: 1em;
+}
+.progress{
+    background-color: green;
+    height: 100%;
+    width: 0%;
 }
 .projects{
+    background-color: sandybrown;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: auto;
-    height: 50vh;
+    height: 100vh;
+    padding: 1em;
+    border: 1px solid black;   
+}
+.projects h1{
+    font-size: 2.25em;
+    text-align: center;
+}
+.contact{
+    background-color: sandybrown;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 100vh;
     border: 1px solid black;
     gap: 1em;
 }
-.contact{
+.contact h1{
+    font-size: 2.25em;
+    text-align: center;
+}
+footer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: auto;
-    height: 50vh;
     border: 1px solid black;
     gap: 1em;
 }

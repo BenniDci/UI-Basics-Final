@@ -5,47 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon zufügen + Font-Awesome-Icons + evtl  -->
+    <script src="https://kit.fontawesome.com/daf95c2c4c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <section class="sidebar">
-
+            <!-- !Background Img für Mobile ab 768px switch zu einer Sidebar per Grid -->
             <h1>Hi there</h1>
             <h1>👋🏼</h1>
-            <h2>I'm <span>Ben</span><span>ja</span><span>min</span></h2>
+            <h2>I'm <span style="color: rgb(5, 5, 252);">Ben</span><span style="color: rgb(4, 202, 4);">ja</span><span style="color: red;">min</span></h2>
+            <img src="./img/anoLaptop.jpg" alt="">
         <p>Web Developer</p>
         <p>Programmer</p>
+        <p>Back End Developer</p>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <!-- Socials ggf. in den Footer -->
         <div class="socials">
-            <a href="#"><img src="img/github.svg" alt="github"></a>
-            <a href="#"><img src="img/linkedin.svg" alt="instagram"></a>
-            <a href="#"><img src="img/twitter.svg" alt="facebook"></a>
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
+        <button id="scrolltop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Go to top"> <i class="fa-solid fa-arrow-up"></i></button>
     </section>
-    <section class="home">
-        <div id="home">
+    <section class="home" id="home">
+        <div>
+            <!-- !Background Img hinzufügen Media ab 768px-->
             <h1>Welcome</h1>
             <h2>to my portfolio</h2>
             <p>Here you can find all my projects and skills</p>
         </div>
     </section>
-    <section class="about">
-        <div id="about">
+    <section class="about" id="about">
+        <!-- Design! + mehr Content-->
+        <div>
             <h1>About Me</h1>
-            <p>My name is Benjamin and I am a web developer. I am 20 years old and I live in Germany. I am currently studying computer science at the University of Applied Sciences in Kaiserslautern. I have been programming for about 3 years now and I am very interested in it. I am currently working on my own projects and I am also working on projects for my studies. I am very interested in web development and I am always looking for new challenges.</p>
+            <p>My name is Benjamin and I am becoming a full-stack web developer. I am 30 years old and I live in Germany. Currently studying web devolopment at the university of DCI in Berlin. I have been programming for about 3 years now. I am currently working on my own projects and also on projects for my studies. I am very interested in web development and I am always looking for new challenges in animations, modding, data-science and script-crafting.</p>
         </div>
     </section>
-    <section class="skills">
-        <div id="skills">
+    <section class="skills" id="skills">
+        <!-- Bilder und zuküftige Pläne -->
+        <div>
             <h1>Skills</h1>
+            <br>
             <div class="skill">
                 <h2>HTML</h2>
                 <div class="progressBar">
@@ -65,22 +76,28 @@
                 </div>
             </div>
             <div class="skill">
-                <h2>PHP</h2>
+                <h2>Python</h2>
                 <div class="progressBar">
                     <div class="progress" style="width: 60%;"></div>
                 </div>
             </div>
             <div class="skill">
-                <h2>SQL</h2>
+                <h2>Java</h2>
                 <div class="progressBar">
                     <div class="progress" style="width: 50%;"></div>
                 </div>
             </div>
+            <div class="skill">
+                <h2>SQL</h2>
+                <div class="progressBar">
+                    <div class="progress" style="width: 40%;"></div>
+                </div>
         </div>
     </section>
-    <section class="projects">
-        <div id="projects">
-            <h1>Projects</h1>
+    <section class="projects" id="projects">
+
+
+
             <div class="projectCard">
                 <div class="projectImg">
                     <img src="img/placeholder.png" alt="project">
@@ -91,6 +108,7 @@
                     <a href="#">View Project</a>
                 </div>
             </div>
+            <br>
             <div class="projectCard">
                 <div class="projectImg">
                     <img src="img/placeholder.png" alt="project">
@@ -101,6 +119,7 @@
                     <a href="#">View Project</a>
                 </div>
             </div>
+            <br>
             <div class="projectCard">
                 <div class="projectImg">
                     <img src="img/placeholder.png" alt="project">
@@ -111,6 +130,7 @@
                     <a href="#">View Project</a>
                 </div>
             </div>
+            <br>
             <div class="projectCard">
                 <div class="projectImg">
                     <img src="img/placeholder.png" alt="project">
@@ -120,13 +140,14 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                     <a href="#">View Project</a>
                 </div>
+                <br>
             </div>
         </div>
     </section>
-    <section class="contact">
-        <div id="contact">
+    <section class="contact" id="contact">
+        <div>
             <h1>Contact Me</h1>
-            <p>Do you have any questions or suggestions? Then feel free to contact me.</p>
+            <p>Do you have any questions or suggestions? Then feel free to contact me:</p>
             <br>
             <form action="contact.php" method="post">
                 <div>
@@ -135,14 +156,21 @@
                 </div>
                 <div>
                     <label for="mail">Your Mail:</label><br>
-                    <input type="email" id="mail" name="email" placeholder="Enter your Email Adress here.." required>
+                    <input type="email" id="mail" name="email" placeholder="Enter Email Adress here.." required>
                 </div>
                 <label for="message">Your Message:</label><br>
                 <textarea name="message" id="message" placeholder="Message"></textarea>
                 <br>
                 <button type="submit" name="submit">Send</button>
             </form>
+        
         </div>
+    </section>
     </main>
+    <footer>
+        <section>
+            <p>© 2024 Benjamin</p>
+        </section>
+    </footer>
 </body>
 </html>
