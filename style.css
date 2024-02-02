@@ -45,23 +45,36 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    list-style-type: none;
     width: 100%;
     height: 100%;
-    padding: 0;
-    gap: 1em;
+    gap: 0.5em;
     
-}
-nav li{
-    list-style: none; 
 }
 nav a{
     text-decoration: none;
-    padding: 0.2em;
-    border: 1px solid black;
-    background-color: rgba(240, 248, 255, 0.171);
     color: yellow;
+    padding: 0.5em;
     
 }
+  
+nav li a {
+    display: block;
+    /* padding: 8px 16px; */
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+nav  li a:hover {
+    text-shadow: 1px 1px 2px black;
+    color: lime;
+    scale: 1.1;
+  }
+
+
+
+
+/* Test */
 .socials{
     margin-top: 5px;
     display: flex;
@@ -284,6 +297,8 @@ nav a{
     font-size: 1.2em;
 }
 footer{
+    background-color: rgba(0, 0, 0, 0.877);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
