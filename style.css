@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Squashed Img into */
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,7 +11,7 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
     background-color: rgba(128, 128, 128, 0.548);
 }
 @media screen and (min-width: 768px){
@@ -92,7 +93,7 @@ nav a{
 }
 .home{
     background-color: sandybrown;
-    background-image: url(./img/abstrakt.jpg);
+    background-image: url(./img/abstrakt.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -138,7 +139,7 @@ nav a{
 }
 .about{
     background-color: sandybrown;
-    background-image: url(./img/dragon.jpg);
+    background-image: url(./img/dragon.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -146,7 +147,7 @@ nav a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10em;
+    padding: 5em;
     width: auto;
     height: 100vh;
     border: 1px solid black;
@@ -171,7 +172,7 @@ nav a{
 }
 .skills{
     background-color: sandybrown;
-    background-image: url(./img/jump.jpg);
+    background-image: url(./img/jump.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -184,7 +185,7 @@ nav a{
     height: 100vh;
     border: 1px solid black;
     gap: 1em;
-    color: rgb(214, 167, 38);
+    color: yellow;
     text-shadow: black 1px 1px; 
 }
 .skills h1{
@@ -202,7 +203,7 @@ nav a{
 }
 .projects{
     background-color: sandybrown;
-    background-image: url(./img/sonnuntergang.jpg);
+    background-image: url(./img/sonnuntergang.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -226,7 +227,7 @@ nav a{
 .projectCard{
     display: flex;
     flex-direction: column;
-    background-image: url(./img/zahlen.jpg);
+    background-image: url(./img/zahlen.avif);
     align-items: center;
     justify-content: center;
     gap: 1em;
@@ -240,7 +241,7 @@ nav a{
 }
 .contact{
     background-color: sandybrown;
-    background-image: url(./img/sonnuntergang2.jpg);
+    background-image: url(./img/sonnuntergang2.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -262,7 +263,7 @@ nav a{
     text-align: center;
     color: yellow;
     background-color: rgba(128, 128, 128);
-    background-image: url(./img/zahlen.jpg);
+    background-image: url(./img/zahlen.avif);
     border: 2px solid black;
     border-radius: 5px;
     padding: 0.5em;
@@ -274,7 +275,7 @@ nav a{
     justify-content: center;
     gap: 1em;
     background-color: rgba(128, 128, 128);
-    background-image: url(./img/zahlen.jpg);
+    background-image: url(./img/zahlen.avif);
     border: 2px solid black;
     border-radius: 5px;
     padding: 1em;
