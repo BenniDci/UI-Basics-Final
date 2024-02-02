@@ -234,6 +234,18 @@ nav  li a:hover {
     border: 2px solid black;
     border-radius: 5px;
 }
+.projects a{
+    text-decoration: none;
+    color: yellow;
+    border-radius: 5px;
+    font-size: small;
+    padding: 0.3em;
+}
+.projects a:hover{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: lime;
+    text-shadow: 1px 1px 2px ;
+}
 .contact{
     /* background-color: sandybrown; */
     background-image: url(./img/sonnuntergang2.avif);
