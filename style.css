@@ -14,26 +14,6 @@ main{
     /* border: 5px solid blue; */
     background-color: rgba(128, 128, 128, 0.548);
 }
-@media screen and (min-width: 768px){
-    main{
-        grid-area: auto;
-        grid-template-areas: "sidebar home"
-                            "sidebar about"
-                            "sidebar skills"
-                            "sidebar projects"
-                            "sidebar contact"
-                            "sidebar footer";
-
-    }
-    .home{
-        grid-area: home;
-    }
-    .sidebar{
-        grid-area: sidebar;
-        position: sticky;
-        top: 0;
-    }
-}
 .sidebar{
     background-color: rgba(0, 0, 0, 0.842);
     color: white;
@@ -44,20 +24,22 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     gap: 1em;
 }
 .sidebar img{
-    width: auto;
-    height: 10em;
-    border-radius: 150px;
+    width: 50%;
+    height: auto;
+    border-radius: 100px;
     border: 2px solid gray;
 }
 .sidebar p{
     color: whitesmoke;
     font-size: 1.2em;
     padding: 0.25em;
+    text-align: center;
 }
 nav ul{
     display: flex;
@@ -92,7 +74,7 @@ nav a{
     font-size: 1.5em;
 }
 .home{
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     background-image: url(./img/abstrakt.avif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,7 +120,7 @@ nav a{
     border-radius: 10px;
 }
 .about{
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     background-image: url(./img/dragon.avif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,12 +129,12 @@ nav a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5em;
+    padding: 3em;
     width: auto;
     height: 100vh;
     border: 1px solid black;
     gap: 1em;
-
+    
 }
 .about h1{
     font-size: 2.25em;
@@ -171,7 +153,7 @@ nav a{
     color: white;
 }
 .skills{
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     background-image: url(./img/jump.avif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -202,14 +184,14 @@ nav a{
     width: 0%;
 }
 .projects{
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     background-image: url(./img/sonnuntergang.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,7 +199,7 @@ nav a{
     text-align: center;
     width: auto;
     height: 100vh;
-    padding: 1em;
+    
     border: 1px solid black;   
 }
 .projects h1{
@@ -240,13 +222,13 @@ nav a{
     border-radius: 5px;
 }
 .contact{
-    background-color: sandybrown;
+    /* background-color: sandybrown; */
     background-image: url(./img/sonnuntergang2.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 3em;
+    padding-right: 3em;
     color: white;
     display: flex;
     flex-direction: column;
@@ -310,4 +292,34 @@ footer{
     width: auto;
     border: 1px solid black;
     gap: 1em;
+}
+
+@media screen and (min-width: 768px){
+    main{
+        grid-area: auto;
+        grid-template-areas: "sidebar home"
+                            "sidebar about"
+                            "sidebar skills"
+                            "sidebar projects"
+                            "sidebar contact"
+                            "sidebar footer";
+
+    }
+    .home{
+        grid-area: home;
+    }
+    .sidebar{
+        grid-area: sidebar;
+        position: sticky;
+        top: 0;
+        width: 20vw;
+    }
+    .sidebar img{
+        width: 90%;
+    }
+    .about{
+        grid-area: about;
+        padding: 5em;
+        
+    }
 }

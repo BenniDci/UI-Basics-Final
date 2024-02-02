@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./img/moon.avif" type="image/x-icon">
-    <!-- Favicon zufügen + Font-Awesome-Icons + evtl  -->
-</head>
-<body>
-    <main>
-        <section class="sidebar">
-            <!-- !Background Img für Mobile ab 768px switch zu einer Sidebar per Grid -->
-            <h1>Hi there</h1>
-            <h1>👋🏼</h1>
-            <h2>I'm <span style="color:red;">Ben</span><span style="color: rgb(4, 202, 4);">ja</span><span style="color:yellow;">min</span></h2>
-            <img src="./img/anoLaptop.avif" alt="Profile Pic">
-            <p>Web Developer</p>
-            <p>Programmer</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio of Benjamin former full-stack Web-Dev and Videogame Modder. Have Fun!">
+        <title>Portfolio Benjamin</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./img/moon.avif" type="image/x-icon">
+        <script attribute="async"src="https://kit.fontawesome.com/daf95c2c4c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <section class="sidebar">
+                <!-- !Background Img für Mobile ab 768px switch zu einer Sidebar per Grid -->
+                <h1>Hi there</h1>
+                <h1>👋🏼</h1>
+                <h2>I'm <span style="color:red;">Ben</span><span style="color: rgb(4, 202, 4);">ja</span><span style="color:yellow;">min</span></h2>
+                <img src="./img/anoLaptop.avif" srcset=" ./img/anoLaptop.avif 500w" alt="Profile Pic">
+                <p>Web Developer</p>
+                <p>Programmer</p>
             <p>Back End Developer</p>
             <nav>
                 <ul>
@@ -30,18 +31,18 @@
             </nav>
             <!-- Socials ggf. in den Footer -->
             <div class="socials">
-                <a href="https://github.com" target="_blank" name="github icon link"><i class="fa-brands fa-github"></i></a>
-                <a href="https://instagram.com" target="_blank" name="instagram icon link"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://facebook.com" target="_blank" name="facebook icon link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://github.com" target="_blank" aria-label="github icon"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="instagram icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="facebook icon"><i class="fa-brands fa-facebook"></i></a>
             </div>
             <button id="scrolltop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Go to top"> <i class="fa-solid fa-arrow-up"></i></button>
         </section>
         <section class="home" id="home">
             <div>
-                <!-- !Background Img hinzufügen Media ab 768px-->
                 <h1>Welcome</h1>
                 <h2>to my portfolio</h2>
-                <p>Here you can find all my projects and skills</p>
+                <p>Here you can find</p>
+                <p>all my projects and skills</p>
         </div>
     </section>
     <section class="about" id="about">
@@ -100,7 +101,7 @@
                 
                 <div class="projectCard">
                     <div class="projectImg">
-                        <img src="" alt="project">
+                        <!-- <img src="" alt="project"> -->
                     </div>
                     <div class="projectInfo">
                         <h2>Project 1</h2>
@@ -111,7 +112,7 @@
                 <br>
                 <div class="projectCard">
                     <div class="projectImg">
-                        <img src="" alt="project">
+                        <!-- <img src="" alt="project"> -->
                     </div>
                     <div class="projectInfo">
                         <h2>Project 2</h2>
@@ -122,7 +123,7 @@
                 <br>
                 <div class="projectCard">
                     <div class="projectImg">
-                        <img src="" alt="project">
+                        <!-- <img src="" alt="project"> -->
                     </div>
                     <div class="projectInfo">
                         <h2>Project 3</h2>
@@ -133,7 +134,7 @@
                 <br>
                 <div class="projectCard">
                     <div class="projectImg">
-                        <img src="" alt="project">
+                        <!-- <img src="" alt="project"> -->
                     </div>
                     <div class="projectInfo">
                         <h2>Project 4</h2>
@@ -173,5 +174,4 @@
     </section>
 </footer>
 </body>
-<script src="https://kit.fontawesome.com/daf95c2c4c.js" crossorigin="anonymous"></script>
 </html>
