@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --y:yellow;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -52,7 +55,7 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    color: yellow;
+    color: var(--y);
     padding: 0.5em;
     
 }
@@ -70,8 +73,8 @@ nav  li a:hover {
     scale: 1.1;
   }
 
-
-
+/* Dynamischer Unterstrich */
+/* testing out variables */
   nav li {
     --s: 0.1em;   /* the thickness of the line */
     --c: #2c4bff; /* the color */
@@ -94,7 +97,6 @@ nav  li a:hover {
     }
     
     
-    /* Test */
     .socials{
         margin-top: 5px;
     display: flex;
@@ -193,20 +195,20 @@ nav  li a:hover {
 }
 .home h1{
     font-size: 3em;
-    color: yellow;
+    color: var(--y);
     text-shadow: red 1px 1px;
 }
 
 .home h2{
     font-size: 2em;
-    color: yellow;
+    color: var(--y);
     text-shadow: red 1px 1px;
 }
 
 .home p{
     margin-top: 1em;
     font-size: 1.5em;
-    color: yellow;
+    color: var(--y);
     text-shadow: red 1px 1px;
 }
 
@@ -263,7 +265,7 @@ nav  li a:hover {
     height: 100vh;
     border: 1px solid black;
     gap: 1em;
-    color: yellow;
+    color: var(--y);
     text-shadow: black 1px 1px; 
 }
 .skills h1{
@@ -318,7 +320,7 @@ nav  li a:hover {
 }
 .projects a{
     text-decoration: none;
-    color: yellow;
+    color: var(--y);
     border-radius: 5px;
     font-size: small;
     padding: 0.3em;
@@ -350,7 +352,7 @@ nav  li a:hover {
 .contact h1{
     font-size: 2.25em;
     text-align: center;
-    color: yellow;
+    color: var(--y);
     background-color: rgba(128, 128, 128);
     background-image: url(./img/zahlen.avif);
     border: 2px solid black;
@@ -374,12 +376,60 @@ nav  li a:hover {
     padding: 0.5em;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: #363833;
+    color:var(--y)
+}
+.contact form input:hover{
+    background-color: rgba(104, 104, 104, 0.938);
+    color: lime;
+    text-shadow: 1px 2px 2px black;
+}
+.contact form input:focus{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: lime;
+    text-shadow: 1px 2px 2px rgb(95, 92, 92);
+}
+.contact form input::placeholder{
+    color: var(--y);
 }
 .contact form textarea{
+    background-color: #363833;
+    color: var(--y);
     width: 80%;
+    min-width: 1em;
     padding: 0.5em;
     border: 1px solid black;
     border-radius: 5px;
+}
+.contact form textarea:hover{
+    background-color: rgba(104, 104, 104, 0.938);
+    color: lime;
+    text-shadow: 1px 1px 2px black;
+}
+.contact form textarea:focus{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: lime;
+    text-shadow: 1px 2px 2px rgb(95, 92, 92);
+}
+.contact form textarea::placeholder{
+    color: var(--y);}
+.contact form #subject{
+    width: 15%;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #363833;
+    color: var(--y);
+}
+.contact form #subject:hover{
+    background-color: rgba(104, 104, 104, 0.938);
+    color: lime;
+    text-shadow: 1px 1px 2px black;
+}
+.contact form #subject:focus{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: lime;
+    text-shadow: 1px 2px 2px rgb(95, 92, 92);
 }
 .contact form button{
     width: 5em;
@@ -387,7 +437,7 @@ nav  li a:hover {
     border: 1px solid black;
     border-radius: 5px;
     background-color: rgba(90, 88, 88, 0.459);
-    color: yellow;
+    color: var(--y);
     font-size: 1.2em;
 }
 .contact form button:hover{
@@ -396,14 +446,15 @@ nav  li a:hover {
     color: lime;
 }
 form button li {
-    --s: 0.1em;   /* the thickness of the line */
-    --c: #2c4bff; /* the color */
+    --s: 0.1em;   /* dicke von der Line */
+    --c: #2c4bff; /* Farbe Balken*/
     
     color: #0000;
     padding-bottom: var(--s);
     background: 
       linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
       linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+      /* linear gradient Aufbau mit transition damit sich der Balken schrittweise aufbaut und am Endpunkt verbleibt solange gehovert wird */
     -webkit-background-clip: text,padding-box;
             background-clip: text,padding-box;
     transition: 0.5s;
@@ -526,7 +577,7 @@ footer{
   .menu__item {
     display: block;
     padding: 12px 10px;
-    color: #c1d323;
+    color: var(--y);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
