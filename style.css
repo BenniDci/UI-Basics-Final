@@ -73,6 +73,27 @@ nav  li a:hover {
 
 
 
+  nav li {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #2c4bff; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+  nav li:hover {--_p: 100%}
+
+  nav li {
+    font-family: system-ui, sans-serif;
+    /* font-size: 5rem; */
+    cursor: pointer;
+  }
+
 
 /* Test */
 .socials{
@@ -86,6 +107,59 @@ nav  li a:hover {
     color: limegreen;
     font-size: 1.5em;
 }
+/* Welcome Test */
+
+:root {
+    --gold: #60ff38;
+    --light-shadow: #8a8816;
+    --dark-shadow: #3e2904;
+  }
+  body {
+    margin: 0;
+  }
+  .wrapper {
+    /* background: radial-gradient(#272727, #1b1b1b); */
+    display: grid;
+    grid-template-areas: 'overlap';
+    place-content: center;
+    /* text-transform: uppercase; */
+    gap: 1em;
+    /* height: 100vh; */
+  }
+  .wrapper > div {
+    background-clip: text;  
+    -webkit-background-clip: text;
+    color: #363833;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: clamp( 3em, 18vw, 2rem);
+    grid-area: overlap;
+    letter-spacing: 1.5px;
+    -webkit-text-stroke: 4px transparent;
+  }
+  div.bg {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold) 0% , 
+      var(--dark-shadow) 5%,
+      var(--gold) 12%);
+    color: transparent;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
+  }
+  div.fg{
+    background-image: repeating-linear-gradient( 5deg,  
+      var(--gold) 0% , 
+      var(--light-shadow) 23%, 
+      var(--gold) 31%);
+    color: #1e2127;
+    transform: scale(1);
+  }
+
+  /* Test Ende */
+
+
+
 .home{
     /* background-color: sandybrown; */
     background-image: url(./img/abstrakt.avif);
@@ -107,6 +181,7 @@ nav  li a:hover {
     color: yellow;
     text-shadow: red 1px 1px;
 }
+
 .home h2{
     font-size: 2em;
     color: yellow;
@@ -119,6 +194,12 @@ nav  li a:hover {
     color: yellow;
     text-shadow: red 1px 1px;
 }
+
+
+
+
+
+
 #scrolltop{
     position: fixed;
     bottom: 20px;
@@ -212,7 +293,6 @@ nav  li a:hover {
     text-align: center;
     width: auto;
     height: 100vh;
-    
     border: 1px solid black;   
 }
 .projects h1{
