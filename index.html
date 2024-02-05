@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="./img/moon.avif" type="image/x-icon">
         <script attribute="async"src="https://kit.fontawesome.com/daf95c2c4c.js" crossorigin="anonymous"></script>
+        <!-- avif Bild Formate für bessere Performance -->
     </head>
     <body>
         <main>
@@ -23,11 +24,11 @@
             <!-- Styling anpassen / Hover effekte / Grid system benutzen? -->
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" title="Home Welcome Area">Home</a></li>
+                    <li><a href="#about" title="Littl Context about me">About Me</a></li>
+                    <li><a href="#skills" title="My current Skills">Skills</a></li>
+                    <li><a href="#projects" title="Ongoing Projects">Projects</a></li>
+                    <li><a href="#contact" title="Call me maybe">Contact</a></li>
                 </ul>
             </nav>
             <!-- Socials ggf. in den Footer -->
@@ -37,6 +38,7 @@
                 <a href="https://facebook.com" target="_blank" aria-label="facebook icon"><i class="fa-brands fa-facebook"></i></a>
             </div>
             <div>
+               
                 <button id="scrolltop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Go to top"> <i class="fa-solid fa-arrow-up"></i></button>
 
             </div>
@@ -190,23 +192,31 @@
     <section>
         <p>© 2024 Benjamin</p>
     </section>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+            <li><a class="menu__item" href="#home" title="Home Welcome Area">Home</a></li>
+            <li><a class="menu__item" href="#about" title="Littl Context about me">About Me</a></li>
+            <li><a class="menu__item" href="#skills" title="My current Skills">Skills</a></li>
+            <li><a class="menu__item" href="#projects" title="Ongoing Projects">Projects</a></li>
+            <li><a class="menu__item" href="#contact" title="Call me maybe">Contact</a></li>
+        </ul>
+      </div>
 </footer>
 </body>
 </html>
 <!-- 
-1.Boilerplate Favivon Titel verlinkungen CHECK
-4. list style type anpassen CHECK list-style: none;
-5. Eltern Kind befehls-/erbketten bauen (nth-of-type | nth-of-child etc.
-6. id / class verwenden 
 7. mailto: + links verwenden (target blank + no referer kommentieren 
-8. RGBA HEX verwenden oder zumindest Farbverweise 
 9. :hover :active :visited Links und Menü modifizieren (Interaktives Menü)
 10. px + %, em + rem, vh + vw sinnvoll verwenden 
 11. Doom Konsolen Bezug in Betracht ziehen 
 12. img + alt + Hintergrundbild (no-repeat,cover,center etc.) möglichst passend zu Inhalten und ggf. Verlinkt mit Icons selbiger funktion oder zur Listen anpassung
 13. border | border-radius | object-fit / width für Bilder WICHTIG | ggf. float für Text Dynamik
 14. Lighthouse Score checken 
-15. Kaskade beschreiben per "nähe" "Reihenfolge" "Spezifität"
 16. Kontrolle der Vererbung per inherit initial unset ggf einbinden
 17. container | nav | section | article | sidebar bauen 
 18. * -> den Soft Reset und die Font-size: 62.5% einbinden 
@@ -214,7 +224,6 @@
 20. display: inline, block, inline-block unterschiede aufzeigen
 21. linear gradient einfügen vllt in Kombi mit Hintergrundbild
 22. position: static, realative, absolute, fixed, sticky -> top, bottom, right, left 
-23. z-index um boxen z.b. übereinander zu legen 
 24. evtl mit span tags um einzelne stellen vom Text zu färben verwenden strong em in betracht ziehn
 25. Font-Familien Verwenden und mindestens ein Google-Font per Download oder Import einbauen
 besser download damit es lokal ist | auch Bilder etc.
