@@ -227,8 +227,9 @@ div.fg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 3em;
-  width: auto;
+  width: fit-content;
   height: 100vh;
   border: 1px solid black;
   gap: 1em;
@@ -236,8 +237,10 @@ div.fg {
 .about h1 {
   font-size: 2.25em;
   text-align: center;
+  font-family: "Fantasy", sans-serif;
   background-color: rgba(0, 0, 0, 0.856);
-  color: white;
+  box-shadow: 2px 2px 2px 2px rgb(61, 61, 61);
+  color: whitesmoke;
   border-radius: 5px;
   margin-bottom: 1em;
 }
@@ -245,8 +248,10 @@ div.fg {
   border: 1px solid black;
   padding: 1em;
   border-radius: 5px;
+  
   font-size: large;
   background-color: rgba(0, 0, 0, 0.856);
+  box-shadow: 2px 2px 2px 2px rgb(61, 61, 61);
   color: white;
 }
 .skills {
